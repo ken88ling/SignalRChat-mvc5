@@ -25,6 +25,8 @@ namespace SignalRChat.Models
         {
         }
 
+        public DbSet<ChatHistory> ChatHistories { get; set; }
+
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
